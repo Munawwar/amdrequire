@@ -197,6 +197,9 @@ var Module = require('module'),
 	}
 ;
 
+// Mimic RequireJS definition
+define.amd = {};
+
 // Make AMD require available.
 require.config = config;
 Module.prototype.require = require;
